@@ -1,4 +1,11 @@
 @echo off
+REM =============================================================
+REM node-package-scanner
+REM Copyright (c) 2025 PixoVoid (https://PixoVoid.dev)
+REM For private use only. Use at your own risk.
+REM No warranty or guarantee of correctness. The author accepts no liability.
+REM CSV source: https://www.koi.ai/incident/live-updates-sha1-hulud-the-second-coming-hundred-npm-packages-compromised (25.11.2025, 13:00 CET)
+REM =============================================================
 setlocal enabledelayedexpansion
 
 REM === CONFIGURATION ===
