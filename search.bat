@@ -49,10 +49,13 @@ if exist "%ROOTS_FILE%" (
         )
     )
 ) else (
-    for %%x in (%DEFAULT_ROOTS:;= %) do (
+    REM Korrigierte Verarbeitung, damit Pfade mit Leerzeichen nicht aufgespalten werden
+    for %%x in ("%DEFAULT_ROOTS:;=";"%") do (
+        set "item=%%~x"
+        set "item=!item:"=!"
         set /a ROOT_COUNT+=1
-        set "ROOT!ROOT_COUNT!=%%x"
-        echo    %%x >> "%OUTPUT_FILE%"
+        set "ROOT!ROOT_COUNT!=!item!"
+        echo    !item! >> "%OUTPUT_FILE%"
     )
 )
 
