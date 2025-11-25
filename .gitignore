@@ -1,0 +1,9 @@
+roots.txt# Ignore generated output file
+found_packages.txt
+# Ignore system files
+Thumbs.db
+.DS_Store
+# Node.js artifacts
+node_modules/
+npm-debug.log
+yarn-error.log

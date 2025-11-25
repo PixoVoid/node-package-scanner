@@ -1,0 +1,6 @@
+# roots.txt sample
+# One directory per line to scan
+C:\SampleProject\node_modules
+C:\Example\MyNodeApps
+D:\TestData\node_modules
+# Add more paths as needed
