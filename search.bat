@@ -49,7 +49,7 @@ if exist "%ROOTS_FILE%" (
         )
     )
 ) else (
-    REM Korrigierte Verarbeitung, damit Pfade mit Leerzeichen nicht aufgespalten werden
+    REM Corrected processing so that paths with spaces are not split
     for %%x in ("%DEFAULT_ROOTS:;=";"%") do (
         set "item=%%~x"
         set "item=!item:"=!"
